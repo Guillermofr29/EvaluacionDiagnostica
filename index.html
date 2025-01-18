@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>CRUD de Usuarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            margin: 10px;
+            padding: 8px;
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crud de Usuarios <i class="fa-solid fa-users"></i></h1>
+    <div>
+        <input type="text" id="usuario" placeholder="Nombre de usuario" />
+        <input type="number" id="edad" placeholder="Edad" />
+        <input type="password" id="contraseña" placeholder="Contraseña" />
+        <button onclick="agregarUsuario()">Agregar Usuario <i class="fa-solid fa-user-plus"></i></button>
+        <button onclick="actualizarUsuario()">Actualizar Usuario <i class="fa-solid fa-floppy-disk"></i></button>
+    </div>
+    <div>
+        <h2>Usuarios Registrados <i class="fa-solid fa-users-line"></i></h2>
+        <ul id="listaUsuarios"></ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
