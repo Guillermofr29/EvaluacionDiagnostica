@@ -1,6 +1,8 @@
 /*Realizar un algoritmo que maneje una lista de usuarios, permitiendo agregar, listar,
 actualizar y eliminar usuarios.*/
 
+//https://evaluacion-diagnostica.vercel.app (Para visualizar el crud)
+
 // Guardar los usuarios en el localStorage
 function guardarUsuarios(usuarios) {
     localStorage.setItem('usuarios', JSON.stringify(usuarios));
